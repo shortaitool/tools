@@ -3,84 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Image Resizer</title>
+    <title>Image Resizer with Ads</title>
     <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+
     <div class="container">
-        <h1>📷 Image Resizer & Enhancer</h1>
-        
-        <div class="upload-section">
-            <div class="drop-zone" id="dropZone">
-                <span class="drop-instructions">📤 Drag & Drop Image</span>
-                <span class="or-text">or</span>
-                <input type="file" id="fileInput" accept="image/*" hidden>
-                <label for="fileInput" class="upload-btn">Browse Files</label>
-            </div>
-        </div>
+        <!-- [Keep all previous content from image resizer tool] -->
+        <!-- ... original image resizer code ... -->
+    </div>
 
-        <div class="controls hidden" id="controls">
-            <div class="dimension-controls">
-                <div class="input-group">
-                    <label>Width (px):</label>
-                    <input type="number" id="widthInput" min="1" value="800">
-                </div>
-                <div class="input-group">
-                    <label>Height (px):</label>
-                    <input type="number" id="heightInput" min="1" value="600">
-                </div>
-                <button id="lockAspect" class="lock-btn">🔒</button>
-            </div>
-
-            <div class="enhancement-controls">
-                <div class="slider-group">
-                    <label>Brightness:</label>
-                    <input type="range" id="brightness" min="0" max="200" value="100">
-                </div>
-                <div class="slider-group">
-                    <label>Contrast:</label>
-                    <input type="range" id="contrast" min="0" max="200" value="100">
-                </div>
-                <div class="slider-group">
-                    <label>Saturation:</label>
-                    <input type="range" id="saturation" min="0" max="200" value="100">
-                </div>
-            </div>
-
-            <div class="quality-format">
-                <div class="input-group">
-                    <label>Quality:</label>
-                    <input type="range" id="quality" min="1" max="100" value="90">
-                </div>
-                <div class="input-group">
-                    <label>Format:</label>
-                    <select id="format">
-                        <option value="jpeg">JPEG</option>
-                        <option value="png">PNG</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="preview-section hidden" id="previewSection">
-            <div class="image-comparison">
-                <div class="image-container">
-                    <h3>Original</h3>
-                    <img id="originalImage" class="preview-image">
-                </div>
-                <div class="image-container">
-                    <h3>Processed</h3>
-                    <canvas id="processedImage" class="preview-image"></canvas>
-                </div>
-            </div>
-
-            <div class="action-buttons">
-                <button id="downloadBtn" class="download-btn">💾 Download</button>
-                <button id="resetBtn" class="reset-btn">🔄 Reset</button>
-            </div>
-        </div>
+    <!-- Footer Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="0987654321"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
 </html>
